@@ -23,8 +23,7 @@
 	// Do any additional setup after loading the view, typically from a nib.
     
     // show alert if location services are disabled
-    if( (![self.mySharedLocationManager.locationManager locationServicesEnabled]) ||
-        [CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied)  {
+    if([CLLocationManager authorizationStatus] == kCLAuthorizationStatusDenied)  {
         UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Location Services Disabled"
                                                         message:@"You have not given this application permission to access your location. Go to Settings > Privacy > Location to grant permission for location information."
                                                        delegate:nil
