@@ -23,6 +23,9 @@
 		9C512CA216D265C40000241E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C512C7D16D265C30000241E /* Foundation.framework */; };
 		9C512CAA16D265C40000241E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 9C512CA816D265C40000241E /* InfoPlist.strings */; };
 		9C512CAD16D265C40000241E /* TestLocationManagerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C512CAC16D265C40000241E /* TestLocationManagerTests.m */; };
+		9C512CB716D265FC0000241E /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C512CB616D265FC0000241E /* CoreLocation.framework */; };
+		9C512CB916D266020000241E /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C512CB816D266020000241E /* MapKit.framework */; };
+		9C512CBC16D266E20000241E /* LMSsharedLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9C512CBB16D266E20000241E /* LMSsharedLocationManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +61,10 @@
 		9C512CA916D265C40000241E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		9C512CAB16D265C40000241E /* TestLocationManagerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestLocationManagerTests.h; sourceTree = "<group>"; };
 		9C512CAC16D265C40000241E /* TestLocationManagerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestLocationManagerTests.m; sourceTree = "<group>"; };
+		9C512CB616D265FC0000241E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9C512CB816D266020000241E /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9C512CBA16D266E20000241E /* LMSsharedLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LMSsharedLocationManager.h; sourceTree = "<group>"; };
+		9C512CBB16D266E20000241E /* LMSsharedLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LMSsharedLocationManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9C512CB916D266020000241E /* MapKit.framework in Frameworks */,
+				9C512CB716D265FC0000241E /* CoreLocation.framework in Frameworks */,
 				9C512C7C16D265C30000241E /* UIKit.framework in Frameworks */,
 				9C512C7E16D265C30000241E /* Foundation.framework in Frameworks */,
 				9C512C8016D265C30000241E /* CoreGraphics.framework in Frameworks */,
@@ -87,6 +96,8 @@
 		9C512C6F16D265C30000241E = {
 			isa = PBXGroup;
 			children = (
+				9C512CB816D266020000241E /* MapKit.framework */,
+				9C512CB616D265FC0000241E /* CoreLocation.framework */,
 				9C512C8116D265C30000241E /* TestLocationManager */,
 				9C512CA516D265C40000241E /* TestLocationManagerTests */,
 				9C512C7A16D265C30000241E /* Frameworks */,
@@ -123,6 +134,8 @@
 				9C512C9616D265C30000241E /* LMSViewController.h */,
 				9C512C9716D265C30000241E /* LMSViewController.m */,
 				9C512C8216D265C30000241E /* Supporting Files */,
+				9C512CBA16D266E20000241E /* LMSsharedLocationManager.h */,
+				9C512CBB16D266E20000241E /* LMSsharedLocationManager.m */,
 			);
 			path = TestLocationManager;
 			sourceTree = "<group>";
@@ -274,6 +287,7 @@
 				9C512C8816D265C30000241E /* main.m in Sources */,
 				9C512C8C16D265C30000241E /* LMSAppDelegate.m in Sources */,
 				9C512C9816D265C40000241E /* LMSViewController.m in Sources */,
+				9C512CBC16D266E20000241E /* LMSsharedLocationManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
